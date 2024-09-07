@@ -5,10 +5,12 @@ on:
     branches:
       - main
       - dev
+      - open
   pull_request:
     branches:
       - main
       - dev
+      - open
 
 jobs:
   cypress-run:
