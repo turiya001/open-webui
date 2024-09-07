@@ -3,7 +3,6 @@ name: Release
 on:
   push:
     branches:
-      - main # or whatever branch you want to use
       - open
 
 jobs:

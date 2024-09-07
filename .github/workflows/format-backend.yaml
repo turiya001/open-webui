@@ -3,13 +3,9 @@ name: Python CI
 on:
   push:
     branches:
-      - main
-      - dev
       - open
   pull_request:
     branches:
-      - main
-      - dev
       - open
 
 jobs:
