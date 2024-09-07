@@ -20,11 +20,7 @@ services:
     image: ollama/ollama:latest
 
   open-webui:
-    build:
-      context: .
-      args:
-        OLLAMA_BASE_URL: /ollama
-        dockerfile: Dockerfile
+    image: ghcr.io/turiya001/open-webui:open
     container_name: open-webui
     volumes:
       - open-webui:/app/backend/data
