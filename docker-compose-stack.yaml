@@ -3,11 +3,12 @@ services:
 
   pipelines:
     image: ghcr.io/turiya001/pipelines:open
+    container_name: pipelines
     ports:
       - 9099:9099
     volumes:
       - pipelines:/app/pipelines
-    restart: always
+    restart: unless-stopped
     
   ollama:
     volumes:
